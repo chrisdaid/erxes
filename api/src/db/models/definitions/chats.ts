@@ -31,6 +31,7 @@ export const chatMessageSchema = new Schema({
 
 export const chatSchema = new Schema({
   _id: field({ pkey: true }),
+  name: field({ type: String }),
   createdAt: field({ type: Date, label: 'Created at' }),
-  createdBy: field({ type: Date, label: 'Created by' })
+  createdBy: field({ type: String, label: 'Created by' })
 });

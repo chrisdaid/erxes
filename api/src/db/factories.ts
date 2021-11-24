@@ -12,6 +12,7 @@ import {
   CalendarGroups,
   Calendars,
   Channels,
+  Chats,
   ChecklistItems,
   Checklists,
   ClientPortals,
@@ -1903,4 +1904,13 @@ export const clientPortalFactory = async (params: { name?: string }) => {
   });
 
   return portal.save();
+};
+
+export const chatFactory = async (params: { name?: string }) => {
+  const chat = new Chats({
+    name: params.name || faker.random.word(),
+    createdBy: (await userFactory({}))._id
+  });
+
+  return chat.save();
 };
