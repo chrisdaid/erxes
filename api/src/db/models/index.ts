@@ -44,6 +44,7 @@ import Users from './Users';
 import Webhooks from './Webhook';
 import Exms from './Exms';
 import { Structures, Departments, Units, Branches } from './Structure';
+import { Chats, ChatMessages } from './Chats';
 
 export {
   EmailDeliveries,
@@ -105,5 +106,7 @@ export {
   Structures,
   Departments,
   Units,
-  Branches
+  Branches,
+  Chats,
+  ChatMessages
 };

@@ -49,6 +49,7 @@ import widgets from './widgets';
 import smsDeliveries from './smsDeliveries';
 import exms from './exms';
 import structures from './structures';
+import chats from './chats';
 
 export default {
   ...users,
@@ -98,5 +99,6 @@ export default {
   ...smsDeliveries,
   ...exms,
   ...structures,
-  ...automations
+  ...automations,
+  ...chats
 };

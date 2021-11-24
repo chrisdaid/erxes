@@ -46,6 +46,7 @@ import webhooks from './webhooks';
 import widgets from './widgets';
 import exms from './exms';
 import structures from './structures';
+import chats from './chats';
 
 export default {
   ...users,
@@ -92,5 +93,6 @@ export default {
   ...exms,
   ...structures,
   ...clientPortal,
-  ...automationsMutations
+  ...automationsMutations,
+  ...chats
 };

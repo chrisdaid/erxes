@@ -224,6 +224,11 @@ import {
   queries as StructureQueries,
   types as StructureTypes
 } from './structure';
+import {
+  mutations as ChatMutations,
+  queries as ChatQueries,
+  types as ChatTypes
+} from './chat';
 
 export let types = `
   scalar JSON
@@ -276,6 +281,7 @@ export let types = `
   ${ExmTypes}
   ${StructureTypes}
   ${AutomationTypes}
+  ${ChatTypes}
 `;
 
 export let queries = `
@@ -325,6 +331,7 @@ export let queries = `
   ${ExmQueries}
   ${StructureQueries}
   ${AutomationQueries}
+  ${ChatQueries}
 `;
 
 export let mutations = `
@@ -371,6 +378,7 @@ export let mutations = `
   ${ExmMutations}
   ${StructureMutations}
   ${AutomationMutations}
+  ${ChatMutations}
 `;
 
 export let subscriptions = `
